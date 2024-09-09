@@ -3,67 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Influencer</title>
+    <title>Marketing con Alis</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
 </head>
 <body>
-    <!-- Sección Hero -->
+
+    <!-- Header con video de fondo -->
     <header class="hero">
         <div class="overlay"></div>
+        <video autoplay muted loop id="bg-video">
+            <source src="video-promo.mp4" type="video/mp4">
+        </video>
         <div class="hero-content">
-            <h1>Nombre de la Influencer</h1>
-            <p>Breve descripción</p>
+            <h1>Marketing con Alis</h1>
+            <p>Impulsa tu marca al siguiente nivel</p>
         </div>
     </header>
 
-    <!-- Menú de navegación -->
+    <!-- Menú de navegación fijo -->
     <nav class="navbar">
-        <ul>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#collaborations">Colaboraciones</a></li>
-            <li><a href="#social">Redes Sociales</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Marketing con Alis</a>
+            </div>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Sección Sobre mí -->
     <section id="about" class="about">
-        <h2>Sobre mí</h2>
-        <p>Breve información personal o profesional.</p>
-    </section>
-
-    <!-- Sección Colaboraciones -->
-    <section id="collaborations" class="collaborations">
-        <h2>Colaboraciones</h2>
-        <div class="collaboration-gallery">
-            <!-- Imágenes de colaboraciones -->
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Soy Alis, experta en marketing digital, ayudando a marcas a crecer mediante estrategias innovadoras y contenido creativo.</p>
         </div>
     </section>
 
-    <!-- Sección Redes Sociales -->
-    <section id="social" class="social">
-        <h2>Sígueme en redes sociales</h2>
-        <div class="social-icons">
-            <a href="#"><img src="icono-instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="icono-twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="icono-youtube.png" alt="YouTube"></a>
+    <!-- Sección Servicios -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Estrategias de Marketing</h3>
+                    <p>Diseño de estrategias personalizadas para cada marca.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Gestión de Redes Sociales</h3>
+                    <p>Creación de contenido y gestión de cuentas para un mayor alcance.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Consultoría Digital</h3>
+                    <p>Asesoramiento especializado para optimizar tu presencia online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portafolio</h2>
+            <div class="portfolio-gallery">
+                <!-- Aquí puedes poner imágenes del portafolio -->
+                <div class="portfolio-item"><img src="proyecto1.jpg" alt="Proyecto 1"></div>
+                <div class="portfolio-item"><img src="proyecto2.jpg" alt="Proyecto 2"></div>
+                <div class="portfolio-item"><img src="proyecto3.jpg" alt="Proyecto 3"></div>
+            </div>
         </div>
     </section>
 
     <!-- Sección Contacto -->
     <section id="contact" class="contact">
-        <h2>Contacto</h2>
-        <p>Para colaboraciones o consultas, completa el siguiente formulario:</p>
-        <form action="submit.php" method="post">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu email" required>
-            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="submit.php" method="post">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Influencer. Todos los derechos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 Marketing con Alis. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <script src="js/scripts.js"></script>
