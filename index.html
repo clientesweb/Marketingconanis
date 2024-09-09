@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Influencer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección Hero -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Nombre de la Influencer</h1>
+            <p>Breve descripción</p>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#collaborations">Colaboraciones</a></li>
+            <li><a href="#social">Redes Sociales</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Sobre mí -->
+    <section id="about" class="about">
+        <h2>Sobre mí</h2>
+        <p>Breve información personal o profesional.</p>
+    </section>
+
+    <!-- Sección Colaboraciones -->
+    <section id="collaborations" class="collaborations">
+        <h2>Colaboraciones</h2>
+        <div class="collaboration-gallery">
+            <!-- Imágenes de colaboraciones -->
+        </div>
+    </section>
+
+    <!-- Sección Redes Sociales -->
+    <section id="social" class="social">
+        <h2>Sígueme en redes sociales</h2>
+        <div class="social-icons">
+            <a href="#"><img src="icono-instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="icono-twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icono-youtube.png" alt="YouTube"></a>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <p>Para colaboraciones o consultas, completa el siguiente formulario:</p>
+        <form action="submit.php" method="post">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Influencer. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
